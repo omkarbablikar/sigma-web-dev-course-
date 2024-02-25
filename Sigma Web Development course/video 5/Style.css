@@ -1,0 +1,12 @@
+/* img{
+    filter: blur(2px);
+} */
+
+th{
+    border-radius: 2px;
+    border-style: dashed;
+}
+
+td{
+    border: 2px solid;
+}
