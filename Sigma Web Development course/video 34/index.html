@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        img {
+            float: right;
+        }
+
+        .card {
+            border: 2px solid red;
+            
+        }
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src="data:image/jpeg;base64,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"
+            width="300px" alt="">
+        <div class="card">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, aliquam optio sed rerum, ex cupiditate nemo
+            incidunt iusto minus velit laborum similique. Esse necessitatibus cum soluta. Suscipit qui sit blanditiis
+            vero dolore voluptatum placeat nostrum. Nisi ea quam culpa tempore voluptates neque consectetur officiis
+            quo?
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium cupiditate possimus
+            reprehenderit nesciunt maxime! Animi suscipit commodi voluptatem repellat doloremque quam inventore sint
+            tenetur molestias illo quis reiciendis atque ut quod, ipsum aspernatur impedit. Enim autem cumque est soluta
+            harum sunt magni assumenda similique quaerat a, dicta veritatis fugit vitae dolore aut nemo exercitationem!
+            Consequuntur suscipit aspernatur voluptatem nihil maiores cupiditate repellendus fugiat quo vel voluptas
+            officia delectus commodi ratione ut numquam, odio assumenda mollitia placeat esse earum obcaecati. Dolorum
+            error vel dignissimos voluptatibus beatae nulla, aliquam provident corporis quae repellat commodi totam est
+            eos quam magnam voluptas quos molestias quisquam rem saepe illum eius! Cum distinctio, tempore sint deserunt
+            illum amet quisquam sunt fugit voluptatem minima nisi ex eaque aliquid unde voluptates libero inventore quod
+            cumque iusto at, ea delectus laboriosam! Ullam, cumque iusto! Consectetur dolor provident doloremque ad
+            laudantium laboriosam velit, non magnam mollitia sunt assumenda, eaque est minima ipsa deleniti aut dolore
+            cumque dicta nobis, consequatur veritatis odit eos. Fugit, voluptatem necessitatibus. Magni dignissimos
+            molestiae consequatur vitae rem laboriosam laborum, corporis nemo blanditiis porro ad deleniti ut maiores
+            illo numquam iure dolor voluptatem tenetur quam fugit adipisci. Illum perferendis velit dicta cum. Tempora
+            recusandae temporibus est qui. Incidunt, nam eligendi rem alias iure illo vel nisi, unde officiis
+            consequuntur eos ut obcaecati consectetur sequi, minus aut dolor omnis tenetur voluptates odio. Repudiandae
+            sunt, eveniet pariatur, hic, officia doloremque incidunt consequuntur minima illo minus odio a iste quos
+            fuga nostrum harum expedita laboriosam praesentium fugit vel facilis sint vitae! Deleniti eaque fuga sit ab
+            voluptate, eius quae ipsam aspernatur minima adipisci deserunt sunt molestias corporis excepturi tenetur
+            tempore voluptatem officia odit iusto, commodi vel. Voluptates totam velit asperiores minus. Et enim atque,
+            unde eligendi voluptatibus corporis dolorum id nisi totam, nam eos magnam eaque molestias? Reiciendis beatae
+            quisquam assumenda ab earum, explicabo eos. Incidunt, natus! Possimus unde repudiandae illum officia dolorem
+            suscipit veniam ut alias modi! Blanditiis aliquid beatae aspernatur repudiandae, sunt maiores eaque
+            mollitia, distinctio voluptate, officiis odio deserunt quod cum cupiditate! Quas nulla, assumenda autem
+            itaque dolor blanditiis saepe ipsam quod at est? Necessitatibus laboriosam qui, ullam corporis quam optio
+            repellat.</div>
+        <div class="card">Card3</div>
+    </div>
+</body>
+
+</html>
